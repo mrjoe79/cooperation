@@ -10,9 +10,10 @@ public class Bus {
         //this.passengerCount = passengerCount;   승객수는 왜 안될까?
     }
 
-    public void take(int money) {                //난 매개변수에 int passenger, int money로 적었음
+     public int take(int money) {                //난 매개변수에 int passenger, int money로 적었음
         this.money = money;
         passengerCount++;
+        return money;
     }
 
     public void showInfo(){
